@@ -1,27 +1,57 @@
 <!DOCTYPE html> 
 <html>
 	<head>
-		<title> My CRUD App</title>
-		<!-- 
-		TODO 
-		add link to css
-		add link jquery
-		add link to our app
+		<title>CRUD</title>
+		<!--
+	Add link to css
+	Add link to jquery
+	Add link to app
+	Add link to misc
 		-->
 		<script
-			src="https://code.jquery.com/jquery-3.3.1.js"
-			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-			crossorigin="anonymous">
-		</script>
-		<script src="app.js"></script>	
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script src="app.js"></script>
 	</head>
-	<body>
-		<div>
-				<input class="input-field-title" type="text">
-				<input class="input-field-body" type="text">
-				<button class="store-btn">store data</button>
-				<button class="get-btn">get data</button>
-				<button class="delete-btn">delete data</button>
-		</div>
-	</body>
+
+<body>
+  <div>
+		<form class="add-client">
+			<input type="text" name="clientName" placeholder="Client name..." required>
+			<input type="text" name="phoneNumber" placeholder="Client cellphone..." required> 
+			<input type="email" name="email" placeholder="Client email..."> 
+			<input type="text" name="clientNotes" placeholder="Client notes here...">
+			<input type="submit" value="+ new client">
+		</form>
+		<ul	class="clients"></ul>
+<hr>
+		<form class="add-order">
+			<input type="text" name="eventClientName" placeholder="Event client name..." required>
+			<input type="date" name="eventDate" required>
+			<input type="text" name="address" placeholder="Event address..." required>
+			<input type="number" name="tables" placeholder="# of tables" required>
+			<input type="number" name="chairs" placeholder="# of chairs" required> 
+			<input type="text" name="eventNotes" placeholder="Event notes here...">
+			<input type="submit" value="+ new order">
+		</form>
+		<ul	class="orders"></ul>
+
+		
+
+		
+
+<!--
+	<input class="input-title-field" type="text">
+	<input class="input-code-field" type="text">
+
+	<button class="store-button">Store Data</button>
+	<button class="get-button">Get Data</button>
+	<button class="delete-button">Delete</button>
+  
+-->
+  </div>
+  <div class="debug"> </div>
+</body>
+
 </html>
