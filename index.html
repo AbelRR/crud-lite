@@ -24,18 +24,19 @@
 			<input type="text" name="clientNotes" placeholder="Client notes here...">
 			<input type="submit" value="+ new client">
 		</form>
-		<ul	class="clients"></ul>
+		<ul	class="clientList"></ul>
 <hr>
 		<form class="add-order">
-			<input type="text" name="eventClientName" placeholder="Event client name..." required>
+			<input type="text" name="customerName" placeholder="Event client name..." required>
 			<input type="date" name="eventDate" required>
 			<input type="text" name="address" placeholder="Event address..." required>
+			<input type="text" name="delivery" placeholder="Delivery: Day + Time" required>
+			<input type="text" name="pickup" placeholder="Pick-up: Day + Time" required>
 			<input type="number" name="tables" placeholder="# of tables" required>
-			<input type="number" name="chairs" placeholder="# of chairs" required> 
-			<input type="text" name="eventNotes" placeholder="Event notes here...">
+			<input type="number" name="chairs" placeholder="# of chairs" required>
 			<input type="submit" value="+ new order">
 		</form>
-		<ul	class="orders"></ul>
+		<ul	class="orderList"></ul>
 
 		
 
