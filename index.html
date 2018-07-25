@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>CRUD</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
 		<!--
 	Add link to css
 	Add link to jquery
@@ -16,43 +17,33 @@
 	</head>
 
 <body>
-  <div>
-		<form class="add-client">
-			<input type="text" name="clientName" placeholder="Client name..." required>
-			<input type="text" name="phoneNumber" placeholder="Client cellphone..." required> 
-			<input type="email" name="email" placeholder="Client email..."> 
-			<input type="text" name="clientNotes" placeholder="Client notes here...">
-			<input type="submit" value="+ new client">
-		</form>
-		<ul	class="clientList"></ul>
-<hr>
-		<form class="add-order">
-			<input type="text" name="customerName" placeholder="Event client name..." required>
-			<input type="date" name="eventDate" required>
-			<input type="text" name="address" placeholder="Event address..." required>
-			<input type="text" name="delivery" placeholder="Delivery: Day + Time" required>
-			<input type="text" name="pickup" placeholder="Pick-up: Day + Time" required>
-			<input type="number" name="tables" placeholder="# of tables" required>
-			<input type="number" name="chairs" placeholder="# of chairs" required>
-			<input type="submit" value="+ new order">
-		</form>
-		<ul	class="orderList"></ul>
-
+  <div class="gridContainer">
+		<aside class="clientContainer">
+			<ul	class="clientList"></ul>
+			<form class="addClient">
+				<input type="text" name="clientName" placeholder="Client name..." required>
+				<input type="text" name="phoneNumber" placeholder="Client cellphone..." required> 
+				<input type="email" name="email" placeholder="Client email..."> 
+				<input type="text" name="clientNotes" placeholder="Client notes here...">
+				<input type="submit" value="+ new client">
+			</form>
+		</aside>
 		
-
-		
-
-<!--
-	<input class="input-title-field" type="text">
-	<input class="input-code-field" type="text">
-
-	<button class="store-button">Store Data</button>
-	<button class="get-button">Get Data</button>
-	<button class="delete-button">Delete</button>
-  
--->
+		<main class="orderContainer">
+			<ul	class="orderList"></ul>
+			<form class="add-order">
+				<input type="text" name="customerName" placeholder="Event client name..." required>
+				<input type="date" name="eventDate" required>
+				<input type="text" name="address" placeholder="Event address..." required>
+				<input type="text" name="delivery" placeholder="Delivery: Day + Time" required>
+				<input type="text" name="pickup" placeholder="Pick-up: Day + Time" required>
+				<input type="number" name="tables" placeholder="# of tables" required>
+				<input type="number" name="chairs" placeholder="# of chairs" required>
+				<input type="submit" value="+ new order">
+			</form>
+		</main>
   </div>
-  <div class="debug"> </div>
+  
 </body>
 
 </html>
